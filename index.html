@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header class="border-b border-gray-200">
+        <div class="container mx-auto px-5 py-2 overflow-hidden">
+            <div class="flex items-center justify-between flex-wrap gap-3">
+                <div class="flex items-center gap-3 shrink-0">
+                    <img src="./imgs/logo.png" alt="logo" class="w-8 h-8">
+                    <img src="./imgs/logo-text.png" alt="logo text" class="h-5 max-w-[100px] w-full">
+                </div>
+                <div id="togglBtn"
+                    class="flex items-center justify-center gap-2 hover:bg-[#70C05B]  text-white rounded-md cursor-pointer w-[140px] h-[40px] hover:bg-[#5da64d] transition shrink-0">
+                    <img src="./imgs/tugle.png" alt="menu icon" class="w-4 h-4">
+                    <h4 class="text-[16px]">Каталог</h4>
+                </div>
+                <div class="relative hidden sm:block flex-grow max-w-[380px]">
+                    <input type="text" placeholder="Найти товар"
+                        class="w-full border border-[#70C05B] rounded-md pl-4 pr-10 py-2 focus:outline-none focus:ring-2 focus:ring-[#70C05B]">
+                    <img src="./imgs/search.png" alt="search" class="absolute right-3 top-2.5 w-5 h-5">
+                </div>
+                <div
+                    class="hidden sm:flex flex-col items-center text-gray-600 hover:text-[#70C05B] cursor-pointer shrink-0">
+                    <img src="./imgs/like.png" alt="like" class="w-6 h-6 mb-1">
+                    <h4 class="text-sm">Избранное</h4>
+                </div>
+                <div
+                    class="hidden lg:flex flex-col items-center text-gray-700 hover:text-[#70C05B] cursor-pointer shrink-0">
+                    <img src="./imgs/kub.png" alt="kub" class="w-6 h-6 mb-1">
+                    <h4 class="text-sm">продукты</h4>
+                </div>
+                <div
+                    class="hidden md:flex flex-col items-center text-gray-700 hover:text-[#70C05B] cursor-pointer relative shrink-0">
+                    <img src="./imgs/savat.png" alt="basket" class="w-6 h-6 mb-1">
+                    <h4 class="text-sm">Корзина</h4>
+                    <span class="absolute -top-1 right-3 bg-red-500 text-white text-xs px-1.5 rounded-full">1</span>
+                </div>
+                <div class="hidden  lg:block md:none items-center justify-end gap-2 cursor-pointer shrink-0">
+                    <img src="./imgs/avatar (6).png" alt="avatar" class="w-8 h-8 rounded-full">
+                    <h3 class="text-sm font-medium">Алексей</h3>
+                    <img src="./imgs/pastga.png" alt="down" class="w-4 h-4">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div>
+            <img class="w-full" src="./imgs/content-1208x200 (1).png" alt="">
+        </div>
+
+
+        <section id="aksya">
+            <div class="container mx-auto">
+                <h1 class="text-[36px] text-[#414141] pl-[30px] pt-[80px] pb-[40px]">Акции</h1>
+                <div
+                    class="dis-cards grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4   px-[20px] items-center">
+
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="navinki">
+
+                <div class="container mx-auto px-[20px]">
+                    <div class="flex justify-between  items-center ">
+                        <h1 class="text-[36px] text-[#414141] pl-[30px] pt-[80px] pb-[40px]">Новинки</h1>
+                        <p class="text-[18px] text-[#414141] >Все продукты  ">Все продукты ></p>
+                    </div>
+                    <div
+                        class="nav-cards  dis-cards grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4   px-[20px] items-center gap-[30px]">
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="pakupali">
+            <div class="container mx-auto px-[20px] pt-[60px] pb-[120px]">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-[36px] text-[#414141] pl-[30px] pb-[40px] ">Покупали раньше</h1>
+                    <p class="text-[18px] text-[#606060]">Все продукты ></p>
+                </div>
+                <div
+                    class="pakupali-cards grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4   px-[20px] items-center">
+
+                    <div class="max-w-[400px] w-full px-[10px]">
+                        <img class="w-full h-[300px]" src="./assets/images/products/6.png" alt="">
+                        <h3 class="text-[20px] pt-[10px] pb-[10px] text-[#414141]">$77</h3>
+                        <p class="text-[16px] text-[#414141]">Комбайн КЗС-1218<br> «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+                        <div class="flex items-center gap-1 pb-[10px]">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                        </div>
+                        <button
+                            class="w-full  h-[40px] rounded-[5px] border-2 border-[#70C05B] cursor-pointer hover:bg-[#FF6633] hover:border-[#FF6633] transition duration-400">В
+                            корзину
+                        </button>
+                    </div>
+
+                    <div class="max-w-[400px] w-full px-[10px]">
+                        <img class="w-full h-[300px]" src="./assets/images/products/10.png" alt="">
+                        <h3 class="text-[20px] pt-[10px] pb-[10px] text-[#414141]">$77</h3>
+                        <p class="text-[16px] text-[#414141]">Комбайн КЗС-1218<br> «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+                        <div class="flex items-center gap-1 pb-[10px]">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                        </div>
+                        <button
+                            class="w-full  h-[40px] rounded-[5px] border-2 border-[#70C05B] cursor-pointer hover:bg-[#FF6633] hover:border-[#FF6633] transition duration-400">В
+                            корзину
+                        </button>
+                    </div>
+
+                    <div class="max-w-[400px] w-full px-[10px]">
+                        <img class="w-full h-[300px]" src="./assets/images/products/9.png" alt="">
+                        <h3 class="text-[20px] pt-[10px] pb-[10px] text-[#414141]">$77</h3>
+                        <p class="text-[16px] text-[#414141]">Комбайн КЗС-1218<br> «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+                        <div class="flex items-center gap-1 pb-[10px]">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                        </div>
+                        <button
+                            class="w-full  h-[40px] rounded-[5px] border-2 border-[#70C05B] cursor-pointer hover:bg-[#FF6633] hover:border-[#FF6633] transition duration-400">В
+                            корзину
+                        </button>
+                    </div>
+
+                    <div class="max-w-[400px] w-full px-[10px]">
+                        <img class="w-full h-[300px]" src="./assets/images/products/2.png" alt="">
+                        <h3 class="text-[20px] pt-[10px] pb-[10px] text-[#414141]">$77</h3>
+                        <p class="text-[16px] text-[#414141]">Комбайн КЗС-1218<br> «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+                        <div class="flex items-center gap-1 pb-[10px]">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                        </div>
+                        <button
+                            class="w-full  h-[40px] rounded-[5px] border-2 border-[#70C05B] cursor-pointer hover:bg-[#FF6633] hover:border-[#FF6633] transition duration-400">В
+                            корзину
+                        </button>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="predlashenya" class="pb-[120px]">
+            <div
+                class="container mx-auto px-[20px] grid grid-cols-1 gap-[30px]  sm:grid-cols-1 md:grid-cols-2 overflow-hidden">
+                <div class="flex items-center justify-between bg-[#CA936080] p-[30px] max-w-[750px] ">
+                    <div>
+                        <h2 class="text-[24px] text-[#414141] ">Оформите карту<br> «Северяночка»</h2>
+                        <h3>И получайте бонусы при покупке<br> в магазинах и на сайте</h3>
+                    </div>
+                    <img class="max-w-[350px] w-full" src="./imgs/karta.png" alt="">
+                </div>
+
+                <div class="flex items-center justify-between bg-[#E4FFDE] p-[30px] max-w-[750px]">
+                    <div>
+                        <h2 class="text-[24px] text-[#414141] ">Оформите карту<br> «Северяночка»</h2>
+                        <h3>И получайте бонусы при покупке<br> в магазинах и на сайте</h3>
+                    </div>
+                    <img class="max-w-[250px] w-full" src="./imgs/savat2.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="novi">
+            <div>
+                <h1>Наши магазины</h1>
+                <ul class=" container mx-auto flex items-center gap-[20px] pb-[30px]">
+                    <li
+                        class="rounded-[5px] cursor-pointer hover:bg-[#70C05B]  max-w-[100px] w-full h-[40px] text-center p-[4px]">
+                        <a href="">п.Щельяюр</a>
+                    </li>
+                    <li
+                        class="rounded-[5px] cursor-pointer hover:bg-[#70C05B]  max-w-[100px] w-full h-[40px] text-center p-[4px]">
+                        <a href="">д.Вертеп</a>
+                    </li>
+                    <li
+                        class="rounded-[5px] cursor-pointer hover:bg-[#70C05B]  max-w-[100px] w-full h-[40px] text-center p-[4px]">
+                        <a href="">с.Краснобор</a>
+                    </li>
+                    <li
+                        class="rounded-[5px] cursor-pointer hover:bg-[#70C05B]  max-w-[100px] w-full h-[40px] text-center p-[4px]">
+                        <a href="">д.Диюр</a>
+                    </li>
+                </ul>
+                <section class="w-full h-[400px] rounded-xl overflow-hidden">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.5122180284464!2d69.24007351542293!3d41.29949527927269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8bdf9edfd45f%3A0x1ee4b1ef12a9cf5e!2sTashkent!5e0!3m2!1sen!2suz!4v1700000000000"
+                        class="w-full h-full border-0" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </section>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="container mx-auto px-[30px] pt-[120px]">
+                <div class="flex items-center justify-between">
+                    <h1 class="text-[36px] text-[#414141]" >Статьи</h1>
+                    <p class="text-[18px] text-[#606060]">Все статьи ></p>
+                </div>
+                <div class="grid justify-center items-center pb-[80px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-[40px]">
+                    <div class="max-w-[400px] w-full">
+                        <img class="w-full" src="./imgs/bro.png" alt="">
+                        <p class="text-[14px] text-[#606060] pt-2">05.03.2021</p>
+                        <h3 class="text-[18px] text-[#414141] pt-2">Режим использования масок и перчаток на территории магазинов</h3>
+                        <h4 class="text-[18px] text-[#606060] pt-2">Подробная информация о режимах использования масок и перчаток на территории магазинов
+                            "ЛЕНТА".
+                            Информация обновляется каждый будний день.</h4>
+                        <button class="bg-[#E5FFDE]  text-[16px] h-[40px] max-w-[150px] w-full cursor-pointer duration-[400ms]  rounded-[5px] hover:bg-[#70C05B] hover:text-[#FFFFFF]" >
+                            Подробнее
+                        </button>
+                    </div>
+
+                    <div class="max-w-[400px] w-full">
+                        <img class="w-full" src="./imgs/daraxtlar.png" alt="">
+                        <p class="text-[14px] text-[#606060] pt-2">05.03.2021</p>
+                        <h3 class="text-[18px] text-[#414141] pt-2">Режим использования масок и перчаток на территории магазинов</h3>
+                        <h4 class="text-[18px] text-[#606060] pt-2">Подробная информация о режимах использования масок и перчаток на территории магазинов
+                            "ЛЕНТА".
+                            Информация обновляется каждый будний день.</h4>
+                        <button class="bg-[#E5FFDE]  text-[16px] h-[40px] max-w-[150px] w-full cursor-pointer duration-[400ms]  rounded-[5px] hover:bg-[#70C05B] hover:text-[#FFFFFF]" >
+                            Подробнее
+                        </button>
+                    </div>
+
+                    <div class="max-w-[400px] w-full">
+                        <img class="w-full" src="./imgs/mevalar.png" alt="">
+                        <p class="text-[14px] text-[#606060] pt-2">05.03.2021</p>
+                        <h3 class="text-[18px] text-[#414141] pt-2">Режим использования масок и перчаток на территории магазинов</h3>
+                        <h4 class="text-[18px] text-[#606060] pt-2">Подробная информация о режимах использования масок и перчаток на территории магазинов
+                            "ЛЕНТА".
+                            Информация обновляется каждый будний день.</h4>
+                        <button class="bg-[#E5FFDE]  text-[16px] h-[40px] max-w-[150px] w-full cursor-pointer duration-[400ms]  rounded-[5px] hover:bg-[#70C05B] hover:text-[#FFFFFF]" >
+                            Подробнее
+                        </button>
+                    </div>  
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+    <footer class="bg-[#FFF6D9] py-6 border-t border-gray-200">
+        <div class="container mx-auto px-5">
+            <div class="flex flex-wrap items-center justify-between gap-6">
+
+                <!-- Logo -->
+                <div class="flex items-center gap-2 shrink-0">
+                    <img src="./imgs/logo-fut.png" alt="logo" class="w-10 h-10">
+                </div>
+
+                <!-- Navigatsiya -->
+                <ul class="flex flex-wrap justify-center items-center gap-4 text-gray-700 text-sm font-medium">
+                    <li><a href="/" class="hover:text-[#70C05B]">О компании</a></li>
+                    <li><a href="/" class="hover:text-[#70C05B]">Контакты</a></li>
+                    <li><a href="/" class="hover:text-[#70C05B]">Вакансии</a></li>
+                    <li><a href="/" class="hover:text-[#70C05B]">Статьи</a></li>
+                    <li><a href="/" class="hover:text-[#70C05B]">Политика обработки персональных данных</a></li>
+                </ul>
+
+                <!-- Socials & phone -->
+                <ul class="flex flex-wrap items-center justify-center gap-3 text-gray-700">
+                    <li>
+                        <a href="https://instagram.com/@xudaykulov_06" target="_blank">
+                            <img src="./imgs/instagram.png" alt="instagram" class="w-5 h-5">
+                        </a>
+                    </li>
+                    <li><a href="/"><img src="./imgs/wk.png" alt="vk" class="w-5 h-5"></a></li>
+                    <li><a href="/"><img src="./imgs/facebook.png" alt="facebook" class="w-5 h-5"></a></li>
+                    <li><a href="/"><img src="./imgs/ok.png" alt="ok" class="w-5 h-5"></a></li>
+                    <li class="flex items-center gap-2">
+                        <img src="./imgs/phone.png" alt="phone" class="w-5 h-5">
+                        <a href="tel:+998900535016" class="text-sm hover:text-[#70C05B]">+998 90 053 50 16</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Bottom line -->
+            <div class="flex flex-wrap items-center justify-end gap-2 mt-4">
+                <p class="text-xs text-gray-500">Дизайн</p>
+                <img src="./imgs/logo-zasovskiy-small-black (1).png" alt="zasovskiy logo" class="h-4">
+            </div>
+        </div>
+    </footer>
+    <script src="./products-data/products-data.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
