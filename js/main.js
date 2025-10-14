@@ -7,7 +7,7 @@ let sliceProducts = filterPuraducts.slice(
 
 sliceProducts.map((el) => {
   disCards.innerHTML += `
-     <div class=" max-w-[400px] w-full p-[10px]  ">
+     <a href="../pages/singl.html?id=${el.id}" class=" max-w-[400px] w-full p-[10px] ">
                         <div class="relative max-w-[400px]  w-full ">
                             <img class="w-full h-[300px]" src="${
                               el.images[0]
@@ -91,7 +91,7 @@ sliceProducts.map((el) => {
                         <button
                             class="w-full  h-[40px] rounded-[5px] border-2 border-[#70C05B] cursor-pointer hover:bg-[#FF6633] hover:border-[#FF6633] transition duration-400">В
                             корзину</button>
-                    </div>
+                    </a>
                     `;
 });
 
@@ -101,7 +101,7 @@ let slvPuraducts = nevPuraducts.slice(nevPuraducts.length - 8 , nevPuraducts.len
 
 slvPuraducts.map((el) => {
   nevCards.innerHTML += `
-    <div class="  px-[20px] max-w-[400px] w-full ">
+    <div class="  px-[10px] max-w-[400px] w-full ">
                             <div class="max-w-[400px] ">
                                 <img class="w-full h-[300px]" src="${
                                   el.images[0]

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header class="border-b border-gray-200">
+        <div class="container mx-auto px-5 py-2 overflow-hidden">
+            <div class="flex items-center justify-between flex-wrap gap-3">
+                <div class="flex items-center gap-3 shrink-0 w-full sm:w-auto justify-between sm:justify-start">
+                    <div class="flex items-center gap-3 shrink-0">
+                        <img src="../imgs/logo.png" alt="logo" class="w-8 h-8">
+                        <img src="../imgs/logo-text.png" alt="logo text" class="h-5 max-w-[100px] w-full">
+                    </div>
+                    <div class="relative flex sm:hidden items-center flex-grow max-w-[180px]">
+                        <input type="text" placeholder="Найти товар"
+                            class="w-full border border-[#70C05B] rounded-md pl-4 pr-8 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#70C05B]">
+                        <img src="../imgs/search.png" alt="search" class="absolute right-2 top-2 w-4 h-4">
+                    </div>
+                </div>
+                <div id="togglBtn"
+                    class="hidden sm:flex items-center justify-center gap-2 text-[#FFFFFF] bg-[#70C05B] rounded-md cursor-pointer w-[140px] h-[40px] transition shrink-0">
+                    <img src="../imgs/tugle.png" alt="menu icon" class="w-4 h-4">
+                    <h4 class="text-[16px]">Каталог</h4>
+                </div>
+                <div class="relative hidden sm:block flex-grow max-w-[380px]">
+                    <input type="text" placeholder="Найти товар"
+                        class="w-full border border-[#70C05B] rounded-md pl-4 pr-10 py-2 focus:outline-none focus:ring-2 focus:ring-[#70C05B]">
+                    <img src="../imgs/search.png" alt="search" class="absolute right-3 top-2.5 w-5 h-5">
+                </div>
+                <div
+                    class="hidden sm:flex flex-col items-center text-gray-600 hover:text-[#70C05B] cursor-pointer shrink-0">
+                    <img src="../imgs/like.png" alt="like" class="w-6 h-6 mb-1">
+                    <h4 class="text-sm">Избранное</h4>
+                </div>
+                <div
+                    class="hidden lg:flex flex-col items-center text-gray-700 hover:text-[#70C05B] cursor-pointer shrink-0">
+                    <img src="../imgs/kub.png" alt="kub" class="w-6 h-6 mb-1">
+                    <h4 class="text-sm">продукты</h4>
+                </div>
+                <div
+                    class="hidden md:flex flex-col items-center text-gray-700 hover:text-[#70C05B] cursor-pointer relative shrink-0">
+                    <img src="../imgs/savat.png" alt="basket" class="w-6 h-6 mb-1">
+                    <h4 class="text-sm">Корзина</h4>
+                    <span class="absolute -top-1 right-3 bg-red-500 text-white text-xs px-1.5 rounded-full">1</span>
+                </div>
+                <div class="hidden lg:flex items-center justify-end gap-2 cursor-pointer shrink-0">
+                    <img src="../imgs/avatar (6).png" alt="avatar" class="w-8 h-8 rounded-full">
+                    <h3 class="text-sm font-medium">Алексей</h3>
+                    <img src="../imgs/pastga.png" alt="down" class="w-4 h-4">
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    
+
+
+
+    <footer class="bg-[#FFF6D9] py-6 border-t border-gray-200 relative">
+        <div class="container mx-auto px-5 pb-24 sm:pb-6">
+            <div class="flex flex-wrap items-center justify-between gap-6">
+
+                <div class="flex items-center  shrink-0">
+                    <img src="../imgs/logo-fut.png" alt="logo" class="w-13 h-10">
+                </div>
+                <ul class="flex flex-wrap justify-center items-center gap-6 text-gray-700 text-sm font-medium">
+                    <li><a href="/" class="hover:text-[#70C05B] text-[16px]">О компании</a></li>
+                    <li><a href="/" class="hover:text-[#70C05B] text-[16px]">Контакты</a></li>
+                    <li><a href="/" class="hover:text-[#70C05B] text-[16px]">Статьи</a></li>
+                    <li><a href="/" class="hover:text-[#70C05B] text-[16px]">Вакансии</a></li>
+                    <li><a href="/" class="hover:text-[#70C05B] text-[16px]">Политика обработки персональных данных</a>
+                    </li>
+                </ul>
+                <ul class="flex flex-wrap items-center justify-center gap-3 text-gray-700">
+                    <li><a href="https://www.instagram.com/xudaykulov_06"><img src="../imgs/instagram.png"
+                                alt="instagram" class="w-5 h-5"></a></li>
+                    <li><a href="/"><img src="../imgs/wk.png" alt="vk" class="w-5 h-5"></a></li>
+                    <li><a href="/"><img src="../imgs/facebook.png" alt="facebook" class="w-5 h-5"></a></li>
+                    <li><a href="/"><img src="../imgs/ok.png" alt="ok" class="w-5 h-5"></a></li>
+                    <li class="flex items-center gap-2">
+                        <img src="../imgs/phone.png" alt="phone" class="w-5 h-5">
+                        <a href="tel:+998900535016" class="text-sm hover:text-[#70C05B]">+998900535016</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex flex-wrap items-center justify-end gap-2 mt-4">
+                <p class="text-xs text-gray-500">Дизайн</p>
+                <img src="../imgs/logo-zasovskiy-small-black (1).png" alt="zasovskiy logo" class="h-4">
+            </div>
+        </div>
+
+        <div
+            class="res-katalog fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 flex justify-between items-center px-6 py-2 sm:hidden z-50 shadow-[0_-2px_10px_rgba(0,0,0,0.1)]">
+            <div class="flex flex-col items-center text-gray-700 hover:text-[#70C05B]">
+                <img src="../imgs/fut-tugl.png" alt="" class="w-6 h-6">
+                <p class="text-[12px]">Каталог</p>
+            </div>
+            <div class="flex flex-col items-center text-gray-700 hover:text-[#70C05B]">
+                <img src="../imgs/fut-like.png" alt="" class="w-6 h-6">
+                <p class="text-[12px]">Избранное</p>
+            </div>
+            <div class="flex flex-col items-center text-gray-700 hover:text-[#70C05B]">
+                <img src="../imgs/fut-kub.png" alt="" class="w-6 h-6">
+                <p class="text-[12px]">Заказы</p>
+            </div>
+            <div class="flex flex-col items-center text-gray-700 hover:text-[#70C05B] relative">
+                <img src="../imgs/fut-karzinka.png" alt="" class="w-6 h-6">
+                <span class="absolute -top-1 right-2 bg-red-500 text-white text-[10px] px-1.5 rounded-full">1</span>
+                <p class="text-[12px]">Корзина</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="../imgs/avatar (6).png" alt="" class="w-6 h-6 rounded-full">
+            </div>
+        </div>
+    </footer>
+
+    <script src="../products-data/products-data.js"></script>
+    <script src="../js/singl.js"></script>
+</body>
+
+</html>
