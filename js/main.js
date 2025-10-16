@@ -173,3 +173,10 @@ slvPuraducts.map((el) => {
                         </div>
     `;
 });
+
+
+
+let loading = document.getElementById("loading");
+window.addEventListener("load" , function(){
+  loading.classList.add("hidden")
+})
