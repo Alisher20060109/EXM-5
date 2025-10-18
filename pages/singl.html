@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header class="border-b border-gray-200">
+    <header class="border-b border-gray-200 fixed top-0 left-0 w-full z-5  shadow-md bg-white/90 ">
         <div class="container mx-auto px-5 py-2 overflow-hidden">
             <div class="flex items-center justify-between flex-wrap gap-3">
                 <div class="flex items-center gap-3 shrink-0 w-full sm:w-auto justify-between sm:justify-start">
@@ -23,7 +23,7 @@
                         <img src="../imgs/search.png" alt="search" class="absolute right-2 top-2 w-4 h-4">
                     </div>
                 </div>
-                <div id="togglBtn"
+                <div id="toggle-btn"
                     class="hidden sm:flex items-center justify-center gap-2 text-[#FFFFFF] bg-[#70C05B] rounded-md cursor-pointer w-[140px] h-[40px] transition shrink-0">
                     <img src="../imgs/tugle.png" alt="menu icon" class="w-4 h-4">
                     <h4 class="text-[16px]">Каталог</h4>
@@ -58,6 +58,33 @@
             </div>
         </div>
     </header>
+
+<!-- tuglniki ishlamayabdi
+    <ul id="res-nav"
+        class="grid grid-cols-2  sm:grid-cols-2  md:grid-cols-4  container mx-auto justify-between items-center px-[20px] pt-[70px] bg-white/90 py-[20px] translate-y-[-125%] absolute duration-600 z-14">
+        <li class="flex content-start gap-4 flex-col">
+            <a class="text-[16px] text-[#414141] hover:text-[red]" href="">Молоко, сыр, яйцо</a>
+            <a class="text-[16px] text-[#414141] hover:text-[red]" href="">Хлеб</a>
+            <a class="text-[16px] text-[#414141] hover:text-[red]" href="">Фрукты и овощи</a>
+            <a class="text-[16px] text-[#414141] hover:text-[red]" href="">Замороженные продукты</a>
+        </li>
+        <li class="flex content-start gap-4 flex-col">
+            <a class="text-[16px] text-[#414141] hover:text-[red]" href="">Напитки</a>
+            <a class="text-[16px] text-[#414141] hover:text-[red]" href="">Кондитерские изделия</a>
+            <a class="text-[16px] text-[#414141] hover:text-[red]" href="">Чай, кофе</a>
+
+        </li>
+        <li class="flex content-start gap-4 flex-col">
+            <a class="text-[16px] text-[#414141] hover:text-[red]" href="">Бакалея</a>
+            <a class="text-[16px] text-[#414141] hover:text-[red]" href="">Здоровое питание</a>
+            <a class="text-[16px] text-[#414141] hover:text-[red]" href="">Зоотовары</a>
+        </li>
+        <li class="flex content-start gap-4 flex-col">
+            <a class="text-[16px] text-[#414141] hover:text-[red]" href="">Непродовольственные товары</a>
+            <a class="text-[16px] text-[#414141] hover:text-[red]" href="">Детское питание</a>
+            <a class="text-[16px] text-[#414141] hover:text-[red]" href="">Мясо, птица, колбаса</a>
+        </li>
+    </ul> -->
 
     <main>
         <section>
@@ -108,7 +135,7 @@
                     </div>
 
                     <div class="singlePro">
-                      
+
                     </div>
                 </div>
             </div>
@@ -176,7 +203,9 @@
     </footer>
 
     <script src="../products-data/products-data.js"></script>
+
     <script src="../js/singl.js"></script>
+
 </body>
 
 </html>
