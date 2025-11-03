@@ -64,11 +64,3 @@ singlProduct.map((el) => {
                         </div>`;
 });
 
-//ishlamayabdi tuglniki
-// let togglBtn = document.getElementById("toggle-btn");
-// let resNav = document.getElementById("res-nav");
-
-
-// togglBtn.addEventListener("click", function(){
-//   resNav.classList.toggle("translate-y-[-100%]")
-// })

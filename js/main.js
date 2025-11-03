@@ -4,12 +4,14 @@ let sliceProducts = filterPuraducts.slice(
   filterPuraducts.length - 4,
   filterPuraducts.length
 );
+let cards = JSON.parse(localStorage.getItem("cards") || "[]");
+localStorage.setItem("cards", JSON.stringify(cards));
+let badge = document.getElementById("badge");
+badge.textContent = cards.length;
 
 sliceProducts.map((el) => {
   disCards.innerHTML += `
-     <a href="../pages/singl.html?id=${
-       el.id
-     }" class=" max-w-[400px] w-full p-[10px] ">
+     <div ${el.id}" class=" max-w-[400px] w-full p-[10px] ">
                         <div class="relative max-w-[400px]  w-full ">
                             <img class="w-full h-[300px]" src="${
                               el.images[0]
@@ -90,12 +92,45 @@ sliceProducts.map((el) => {
                         </div>`
                             : el.rating === 2
                         }
-                        <button
+                        ${
+                          cards.find((cards) => cards.id === el.id)
+                            ? `
+                           <div class="grid grid-cols-3">
+                           <button class="w-full bg-[#FF6633] text-white text-[22px] font-bold flex items-center justify-center">
+                              - 
+                           </button>
+                           <span class="w-full bg-[white] text-[black] text-[22px] font-bold flex items-center justify-center">
+                           ${cards.find((cards) => cards.id === el.id).numbers}
+                           </span>
+                           <button onClick="increase(${el.id})" 
+                            class="w-full bg-[#FF6633] text-white text-[22px] font-bold flex items-center justify-center">
+                              + 
+                           </button>
+                        </div>
+                          `
+                            : `
+                          <button
+                        onClick="addToCart(${el.id})"
                             class="w-full  h-[40px] rounded-[5px] border-2 border-[#70C05B] cursor-pointer hover:bg-[#FF6633] hover:border-[#FF6633] transition duration-400">В
-                            корзину</button>
-                    </a>
+                            корзину
+                            </button>
+                          `
+                        }
+                    </div>
                     `;
 });
+
+function addToCart(id) {
+  let item = products.find((el) => el.id === id);
+  item.numbers = 1;
+  cards.push(item);
+  localStorage.setItem("cards", JSON.stringify(cards));
+  badge.textContent = cards.length;
+  let slvPuraducts = nevPuraducts.slice(
+    nevPuraducts.length - 8,
+    nevPuraducts.length - 4
+  );
+}
 
 let nevCards = document.querySelector(".nav-cards");
 let nevPuraducts = products.filter((el) => el.discount > 0);
@@ -103,6 +138,23 @@ let slvPuraducts = nevPuraducts.slice(
   nevPuraducts.length - 8,
   nevPuraducts.length - 4
 );
+
+function includes(id) {
+  cards = cards.map((el) => {
+    if (el.id === id) {
+      el.numbers += 1;
+    }
+    return el;
+  });
+  localStorage.setItem("cards", JSON.stringify(cards));
+  badge.textContent = cards.length;
+  let slvPuraducts = nevPuraducts.slice(
+    nevPuraducts.length - 8,
+    nevPuraducts.length - 4
+  );
+}
+
+
 
 slvPuraducts.map((el) => {
   nevCards.innerHTML += `
@@ -198,21 +250,25 @@ let sorchCards = document.getElementById("sorchCards");
 let isExistProduct = false;
 let sorchInput = document.getElementById("input");
 
-
- isExistProduct ?  sorchCards.classList.remove("hidden") : sorchCards.classList.add("hidden");
+isExistProduct
+  ? sorchCards.classList.remove("hidden")
+  : sorchCards.classList.add("hidden");
 sorchInput.addEventListener("input", function (e) {
   sorchCards.innerHTML = "";
   sorchCards.classList.remove("h-[300px]");
-  sorchCards.classList.remove("h-[70px]")
+  sorchCards.classList.remove("h-[70px]");
   let inputValue = e.target.value;
   let res = products.filter((el) =>
     el.name.toLowerCase().includes(inputValue.toLowerCase())
   );
-  inputValue ? isExistProduct = true : isExistProduct = false
-  isExistProduct ?  sorchCards.classList.remove("hidden") : sorchCards.classList.add("hidden"); 
+  inputValue ? (isExistProduct = true) : (isExistProduct = false);
+  isExistProduct
+    ? sorchCards.classList.remove("hidden")
+    : sorchCards.classList.add("hidden");
 
-  res.length > 0 ? res.map((el) => {
-    sorchCards.innerHTML += `
+  res.length > 0
+    ? res.map((el) => {
+        sorchCards.innerHTML += `
      <div class="flex gap-[25px] border-[2px] border-gray-300 p-[10px] cursor-pointer bg-white">
                             <img class="object-cover rounded-md" width="60px" src="${el.images[0]}" alt="">
                             <div>
@@ -220,13 +276,16 @@ sorchInput.addEventListener("input", function (e) {
                                 <p class="line-clamp-[1] text-[16px]">${el.description}.</p>
                             </div>
                         </div>`;
-  }) :  sorchCards.innerHTML = "Bunday maxsulot topilmadi iltmos xatoyingizni to'g'rlang";
+      })
+    : (sorchCards.innerHTML =
+        "Bunday maxsulot topilmadi iltmos xatoyingizni to'g'rlang");
 
-  res.length > 0 ? sorchCards.classList.add("h-[300px]") : sorchCards.classList.add("h-[70px]")
-  
+  res.length > 0
+    ? sorchCards.classList.add("h-[300px]")
+    : sorchCards.classList.add("h-[70px]");
 });
 
 
-//savat 
+
 
 
