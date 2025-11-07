@@ -3,7 +3,7 @@ const id = params.get("id");
 let singlePro = document.querySelector(".singlePro");
 
 let singlProduct = products.filter((el) => el.id == id);
-console.log(singlProduct);
+
 
 singlProduct.map((el) => {
   singlePro.innerHTML += `
