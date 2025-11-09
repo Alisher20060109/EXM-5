@@ -173,9 +173,7 @@ let slvPuraducts = nevPuraducts.slice(
   nevPuraducts.length - 4
 );
 
-slvPuraducts.map((el) => {
-  console.log(el.name);
-});
+
 
 slvPuraducts.map((el) => {
   nevCards.innerHTML += `
