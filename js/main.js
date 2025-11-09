@@ -18,12 +18,18 @@ function showProducts(content, data) {
     content.innerHTML += `
      <div id="${el.id}" class=" max-w-[400px] w-full p-[10px] ">
         <div class="relative max-w-[400px]  w-full ">
-            <img class="w-full h-[300px]" src="${el.images[0]}" alt="${el.name}">
-            <h3 class="bg-[#FF6633]  w-[50px] text-center cursor-pointer text-[#FFFFFF] text-[18px] absolute  bottom-2 left-2 ">${el.discount}%</h3>
+            <img class="w-full h-[300px]" src="${el.images[0]}" alt="${
+      el.name
+    }">
+            <h3 class="bg-[#FF6633]  w-[50px] text-center cursor-pointer text-[#FFFFFF] text-[18px] absolute  bottom-2 left-2 ">${
+              el.discount
+            }%</h3>
         </div>
         <div class="flex justify-between pt-[10px] pb-[10px]">
             <div>
-                <h3 class="text-[#414141] text-[18px]">$${el.price - (el.price * el.discount) / 100}</h3>
+                <h3 class="text-[#414141] text-[18px]">$${
+                  el.price - (el.price * el.discount) / 100
+                }</h3>
                 <p class="text-[#BFBFBF] text-[12px]">С картой</p>
             </div>
             <div>
@@ -32,7 +38,63 @@ function showProducts(content, data) {
             </div>
         </div>
         <p class="text-[18px] text-[#FF6633]">${el.name}</p>
-        <h2 class="text-[16px] text-[#414141] pb-[10px] line-clamp-[2]">${el.description}</h2>
+        <h2 class="text-[16px] text-[#414141] pb-[10px] line-clamp-[2]">${
+          el.description
+        }</h2>
+             <div class="flex items-center gap-1 pb-[10px]">
+                                         ${
+                                           el.rating === 5
+                                             ? `
+                              <div class="flex items-center gap-1 pb-[10px]">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+
+                        </div>
+                            `
+                                             : el.rating === 4.5
+                                             ? `  <div class="flex items-center gap-1 pb-[10px]">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-half.svg" alt="">
+
+                        </div>`
+                                             : el.rating === 4
+                                             ? `  <div class="flex items-center gap-1 pb-[10px]">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            
+
+                        </div>`
+                                             : el.rating === 3.5
+                                             ? `  <div class="flex items-center gap-1 pb-[10px]">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-half.svg" alt="">
+                        </div>`
+                                             : el.rating === 3
+                                             ? `  <div class="flex items-center gap-1 pb-[10px]">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                        </div>`
+                                             : el.rating === 2.5
+                                             ? `  <div class="flex items-center gap-1 pb-[10px]">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-full.svg" alt="">
+                            <img class="max-w-[20px]" src="./imgs/star-half.svg" alt="">
+
+                        </div>`
+                                             : el.rating === 2
+                                         }
+                                </div>
 
         ${
           productInCart
@@ -104,7 +166,6 @@ function decrease(id) {
   showProducts(disCards, sliceProducts);
 }
 
-
 let nevCards = document.querySelector(".nav-cards");
 let nevPuraducts = products.filter((el) => el.discount > 0);
 let slvPuraducts = nevPuraducts.slice(
@@ -112,12 +173,9 @@ let slvPuraducts = nevPuraducts.slice(
   nevPuraducts.length - 4
 );
 
-
 slvPuraducts.map((el) => {
   console.log(el.name);
 });
-
-
 
 slvPuraducts.map((el) => {
   nevCards.innerHTML += `

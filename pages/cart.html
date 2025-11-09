@@ -41,7 +41,7 @@
                         class="w-full border border-[#70C05B] rounded-md pl-4 pr-10 py-2 focus:outline-none focus:ring-2 focus:ring-[#70C05B]" />
                     <img src="../imgs/search.png" alt="search" class="absolute right-3 top-2.5 w-5 h-5" />
 
-                    
+
                 </div>
 
                 <div
@@ -59,7 +59,7 @@
                     <img src="../imgs/savat.png" alt="basket" class="w-6 h-6 mb-1" />
                     <h4 class="text-sm">Корзина</h4>
                     <span id="badge"
-                        class="absolute -top-1 right-3 bg-red-500 text-white text-xs px-1.5 rounded-full">0</span>
+                        class="absolute -top-1 right-3  bg-red-500 text-white text-xs px-1.5 rounded-full">0</span>
                 </div>
                 <div class="hidden lg:flex items-center justify-end gap-2 cursor-pointer shrink-0">
                     <img src="../imgs/avatar (6).png" alt="avatar" class="w-8 h-8 rounded-full" />
@@ -110,10 +110,112 @@
                         <h1 class="text-[20px] text-center text-[#FFFFFF]">1</h1>
                     </span>
                 </div>
-                <div
-                    class="dis-cards flex flex-col   max-w-[900px] w-full">
-                   
+                <div class="karzinka-card flex justify-between gap-[60px]   max-w-[900px] w-full pb-[90px]">
+                    <div class="max-w-[900px] w-ful hover:shadow-lg duration-350">
+                        <form class="flex items-center gap-[30px] pt-[60px] pb-[26px]">
+                            <input class="w-[20px] cursor-pointer h-[20px]" type="checkbox">
+                            <h1 class="text-[18px] hover:text-[red] cursor-pointer">Выделить всё</h1>
+                            <h1 class="text-[18px] hover:text-[red] cursor-pointer">Удалить выбранные</h1>
+                        </form>
+                        <div id="karzinka-cards" class="flex flex-col gap-[30px]">
+                            <div 
+                                class="flex items-center  max-w-[940px] w-full h-[80px]   justify-between p-[10px] gap-[30px] hover:shadow-lg ">
+                                <img class="w-[100px] overflow-visible " src="../assets/images/products/10.png" alt="">
+                                <div>
+                                    <h1 class="text-[18px] text-[#414141] line-clamp-[1]">Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit. Quod, officia.
+                                    </h1>
+                                    <div>
+                                        <h1 class="text-[16px] text-[#414141]">$33</h1>
+                                        <h1 class="text-[16px] text-[#414141]">за шт.</h1>
+                                    </div>
+                                </div>
+                                <div class="flex items-center  justify-between gap-[30px]">
+                                    <div class="max-w-[200px] w-ful flex items-center h-[60px]">
+                                        <button
+                                            class="w-[66px] bg-[red] cursor-pointer text-center h-[30px] rounded-lg">-</button>
+                                        <span class="w-[66px] text-center text-[20px]">1</span>
+                                        <button
+                                            class="w-[66px] text-center bg-[#70C05B] cursor-pointer h-[30px] rounded-lg">+</button>
+                                    </div>
+                                    <h1 class="text-[26px] text-[#414141]">$100</h1>
+                                </div>
+                            </div>
 
+                            <div
+                                class="flex items-center  max-w-[940px] w-full h-[80px]   justify-between p-[10px] gap-[30px] hover:shadow-lg ">
+                                <img class="w-[100px] overflow-visible " src="../assets/images/products/10.png" alt="">
+                                <div>
+                                    <h1 class="text-[18px] text-[#414141] line-clamp-[1]">Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit. Quod, officia.
+                                    </h1>
+                                    <div>
+                                        <h1 class="text-[16px] text-[#414141]">$33</h1>
+                                        <h1 class="text-[16px] text-[#414141]">за шт.</h1>
+                                    </div>
+                                </div>
+                                <div class="flex items-center  justify-between gap-[30px]">
+                                    <div class="max-w-[200px] w-ful flex items-center h-[60px]">
+                                        <button
+                                            class="w-[66px] bg-[red] cursor-pointer text-center h-[30px] rounded-lg">-</button>
+                                        <span class="w-[66px] text-center text-[20px]">1</span>
+                                        <button
+                                            class="w-[66px] text-center bg-[#70C05B] cursor-pointer h-[30px] rounded-lg">+</button>
+                                    </div>
+                                    <h1 class="text-[26px] text-[#414141]">$100</h1>
+                                </div>
+                            </div>
+
+                            <div
+                                class="flex items-center duration-350 max-w-[940px] w-full h-[80px]   justify-between p-[10px] gap-[30px] hover:shadow-lg  ">
+                                <img class="w-[100px] overflow-visible " src="../assets/images/products/10.png" alt="">
+                                <div>
+                                    <h1 class="text-[18px] text-[#414141] line-clamp-[1]">Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit. Quod, officia.
+                                    </h1>
+                                    <div>
+                                        <h1 class="text-[16px] text-[#414141]">$33</h1>
+                                        <h1 class="text-[16px] text-[#414141]">за шт.</h1>
+                                    </div>
+                                </div>
+                                <div class="flex items-center  justify-between gap-[30px]">
+                                    <div class="max-w-[200px] w-ful flex items-center h-[60px]">
+                                        <button
+                                            class="w-[66px] bg-[red] cursor-pointer text-center h-[30px] rounded-lg">-</button>
+                                        <span class="w-[66px] text-center text-[20px]">1</span>
+                                        <button
+                                            class="w-[66px] text-center bg-[#70C05B] cursor-pointer h-[30px] rounded-lg">+</button>
+                                    </div>
+                                    <h1 class="text-[26px] text-[#414141]">$100</h1>
+                                </div>
+                            </div>
+
+                            <div
+                                class="flex items-center max-w-[940px] w-full h-[80px]   justify-between p-[10px] gap-[30px] hover:shadow-lg ">
+                                <img class="w-[100px] overflow-visible " src="../assets/images/products/10.png" alt="">
+                                <div>
+                                    <h1 class="text-[18px] text-[#414141] line-clamp-[1]">Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit. Quod, officia.
+                                    </h1>
+                                    <div>
+                                        <h1 class="text-[16px] text-[#414141]">$33</h1>
+                                        <h1 class="text-[16px] text-[#414141]">за шт.</h1>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between gap-[30px]">
+                                    <div class="max-w-[200px] w-ful flex items-center h-[60px]">
+                                        <button
+                                            class="w-[66px] bg-[red] cursor-pointer text-center h-[30px] rounded-lg">-</button>
+                                        <span class="w-[66px] text-center text-[20px]">1</span>
+                                        <button
+                                            class="w-[66px] text-center bg-[#70C05B] cursor-pointer h-[30px] rounded-lg">+</button>
+                                    </div>
+                                    <h1 class="text-[26px] text-[#414141]">$100</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
                 </div>
             </div>
 
@@ -183,7 +285,7 @@
     </footer>
 
     <script src="../products-data/products-data.js"></script>
-    <script src="../js/singl.js"></script>
+    <script src="../js/main.js"></script>
     <script src="../js/cart.js"></script>
 </body>
 
