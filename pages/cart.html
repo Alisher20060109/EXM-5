@@ -107,23 +107,48 @@
                 <div class="flex items-center relative">
                     <h1 class="text-[64px] text-[#414141] ">Корзина</h1>
                     <span id="badge" class="absolute  bg-[#FF6633]  w-[40px] rounded-[50%] p-1  top-1 left-62">
-                        <h1 class="text-[20px] text-center text-[#FFFFFF]">1</h1>
+                        <h1 id="badge" class="text-[20px] text-center text-[#FFFFFF]">0</h1>
                     </span>
                 </div>
-                <div class="karzinka-card flex justify-between gap-[60px]   max-w-[900px] w-full pb-[90px]">
-                    <div class="max-w-[900px] w-ful hover:shadow-lg duration-350">
+                <div class="karzinka-card  flex justify-between items-center  gap-[60px]    pb-[90px]">
+                    <div class="max-w-[900px] w-ful  duration-350">
                         <form class="flex items-center gap-[30px] pt-[60px] pb-[26px]">
                             <input class="w-[20px] cursor-pointer h-[20px]" type="checkbox">
                             <h1 class="text-[18px] hover:text-[red] cursor-pointer">Выделить всё</h1>
                             <h1 class="text-[18px] hover:text-[red] cursor-pointer">Удалить выбранные</h1>
                         </form>
                         <div id="karzinka-cards" class="flex flex-col gap-[30px]"></div>
-                        <h2 class="text-[26px] font-bold text-[#414141] mt-5">Итого: $<span id="totalPrice">0</span>
+
                         </h2>
 
-                        <input class="" type="checkbox">
+                        <!-- <div>
+                            <h1>Lorem ipsum dolor sit amet.</h1>
+                        </div> -->
                     </div>
+                    <div>
+                        <ul class="flex flex-col px-[10px]">
+                            <li class="flex gap-[10px] items-center pb-[20px]">
+                                <img src="../imgs/tugle-ptichka.png" alt="">
+                                <h1 class="text-[28px]">Списать 200 ₽ </h1>
+                            </li>
+                            <li class="text-[18px] text-[#8F8F8F] pb-[60px]">
+                                На карте накоплено 200 ₽
+                            </li>
+                            <li class="flex gap-[160px] items-center">
+                                <h1 class="text-[18px] text-[#8F8F8F]">3 товара</h1>
+                                <h1 class="text-[18px] text-[#414141]">$258,10</h1>
+                            </li>
+                            <li class="flex gap-[180px] items-center pb-[60px] pt-[10px ]">
+                                <h1>Скидка</h1>
+                                <h1 class="text-[red] text-[18px]">$-8,01</h1>
+                            </li>
+                            <li class="flex items-center justify-between text-center gap-[40px]">
+                                <h1 class="text-[18px]">Итого:</h1>
+                                <h2 class="text-[26px] font-bold text-[#414141] mt-5"> $<span id="totalPrice">0</span>
 
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
             </div>
